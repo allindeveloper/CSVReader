@@ -1,13 +1,9 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package csvreader;
 
 /**
  *
- * @author Spark
+ * @author Precious
  */
 import java.io.BufferedReader;
 import java.io.FileNotFoundException;
@@ -34,11 +30,11 @@ public static String csvFile = "C:\\Users\\Spark\\Documents\\NetBeansProjects\\C
     } catch (IOException ex) {
        ex.printStackTrace();
     }
-            String[][] mat = new String[words.sizCSVe()][10];
-            words.toArray(mat);
+            String[][] math = new String[words.size()][words.size()];
+            words.toArray(math);
           
           for(int i=0; i<10; i++) {
-           System.out.print(  mat[i][i]+ "" );
+           System.out.print(  math[i][i]+ "" );
            System.out.println("");
              }
      
