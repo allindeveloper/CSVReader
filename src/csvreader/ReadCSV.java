@@ -25,7 +25,7 @@ public static String csvFile = "C:\\Users\\Spark\\Documents\\NetBeansProjects\\C
             while ((line = br.readLine()) != null) {
                 words.add(line.split(","));
      } 
-    } catch (FileNotFoundException  ex) {
+    } catch (Exception  ex) {
       ex.printStackTrace();
     } catch (IOException ex) {
        ex.printStackTrace();
